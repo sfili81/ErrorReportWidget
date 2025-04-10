@@ -1,0 +1,21 @@
+{
+    "name": "sfili81/error-report-widget",
+    "description": "Error Report Widget - send email when error on browser console",
+    "type": "yii2-widget",
+    "keywords": ["yii2","widget","error handler"],
+    "license": "BSD-2-Clause",
+    "authors": [
+        {
+            "name": "Federico Sfiligoi",
+            "email": "sfiligoi@iosystems.it"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "~2.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "sfili81\\ErrorReportWidget\\": "src/"
+        }
+    }
+}
