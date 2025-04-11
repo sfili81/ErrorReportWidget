@@ -4,8 +4,7 @@ namespace sfili81\ErrorReportWidget;
 
 use Yii;
 use yii\base\Widget;
-//use sfili81\JsErrorMailHandler;
-use frontend\components\JsErrorMailHandler\JsErrorMailHandlerAssets;
+use  sfili81\ErrorReportWidgetAssets;
 
 /**
  * JsErrorMailHandler widget send an email when encounter a Javascript Error
@@ -21,7 +20,7 @@ class ErrorReportWidget extends Widget
     private $mailTo;//set here your email if you don't use params
     private $setFrom;//set where the error comes from
     public function run(){
-        JsErrorMailHandlerAssets::register($this->view);
+        ErrorReportWidgetAssets::register($this->view);
 
         $this->mailTo = Yii::$app->params['supportEmail'];//set here your email if you don't use params
         $this->setFrom = Yii::$app->name;//set where the error comes from
