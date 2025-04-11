@@ -4,7 +4,7 @@ namespace sfili81\ErrorReportWidget;
 
 use Yii;
 use yii\base\Widget;
-use  sfili81\ErrorReportWidgetAssets;
+use  sfili81\ErrorReportWidget\ErrorReportWidgetAssets;
 
 /**
  * JsErrorMailHandler widget send an email when encounter a Javascript Error
