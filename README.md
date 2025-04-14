@@ -25,3 +25,11 @@ and then insert the code before all other javascript files
 <?= ErrorReportWidget::widget() ?>
 
 ```
+
+### Email Address Setting  
+
+To set an email address to send the error report to, set a pair like this in the params.php file:
+```php
+'supportEmail' => 'yourEmailAddress@mail.com'
+
+```
